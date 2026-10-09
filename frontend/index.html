@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim Web - Bem-vindo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-emerald-200">
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-emerald-600 flex items-center gap-2">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                        Jardim Web
+                    </span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="login.html" class="text-gray-600 hover:text-emerald-600 font-medium transition-colors">Entrar</a>
+                    <a href="register.html" class="bg-emerald-600 text-white px-5 py-2 rounded-full font-medium hover:bg-emerald-700 transition-colors shadow-lg shadow-emerald-200">Registrar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="relative bg-emerald-900 overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1416879598555-25642a8b23f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Garden" class="w-full h-full object-cover opacity-20">
+            </div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 flex flex-col items-center text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                    <span class="block">Conecte-se com o seu</span>
+                    <span class="block text-emerald-400 mt-2">Jardim Inteligente</span>
+                </h1>
+                <p class="mt-6 max-w-lg mx-auto text-xl text-emerald-100 sm:max-w-3xl">
+                    Monitore temperatura, umidade e saúde das suas plantas em tempo real. Uma plataforma IoT completa para cultivar melhor, de qualquer lugar.
+                </p>
+                <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center gap-4">
+                    <a href="register.html" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-emerald-900 bg-white hover:bg-gray-50 transition-colors shadow-xl sm:w-auto">
+                        Começar Agora
+                    </a>
+                    <a href="#features" class="mt-3 w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-emerald-800 hover:bg-emerald-700 transition-colors sm:mt-0 sm:w-auto">
+                        Saber mais
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div id="features" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900">Tudo que seu jardim precisa</h2>
+                    <p class="mt-4 text-xl text-gray-500">Recursos avançados para manter suas plantas saudáveis.</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3">
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-xl bg-emerald-100 text-emerald-600 mb-5">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Tempo Real</h3>
+                        <p class="mt-2 text-gray-600">Acompanhe métricas vitais como umidade do solo e temperatura do ar instantaneamente.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-xl bg-emerald-100 text-emerald-600 mb-5">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Gestão de Dispositivos</h3>
+                        <p class="mt-2 text-gray-600">Adicione e configure múltiplos sensores e atuadores no seu ecossistema facilmente.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-xl bg-emerald-100 text-emerald-600 mb-5">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Ambiente Seguro</h3>
+                        <p class="mt-2 text-gray-600">Administradores têm controle total sobre usuários e dispositivos na rede.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 py-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2026 Jardim Web. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
