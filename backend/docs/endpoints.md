@@ -132,7 +132,7 @@
     ]
   ```
 
-### `PUT /admin/devices`
+### `POST /admin/devices`
 * **Request:**
   ```json
   {
@@ -163,7 +163,7 @@
   }
   ```
 
-### `PUT /admin/devices/{id}`
+### `PATCH /admin/devices/{id}`
 * **Request:**
   ```json
   { 
@@ -187,6 +187,16 @@
       "location": "09241-070"
     }
   ]
+  ```
+
+### `GET /admin/users/{id}`
+* **Response (200 OK):**
+  ```json
+  {
+    "id": 15,
+    "email": "[EMAIL_ADDRESS]",
+    "location": "09241-070"
+  }
   ```
 
 ### `DELETE /admin/users/{id}`

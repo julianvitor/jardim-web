@@ -7,5 +7,5 @@ import (
 
 func SetupRoutes(mux *http.ServeMux){
 	// Rotas de Admin
-	mux.HandleFunc("GET /admin/devices", handlers.AdminListDevices)
+	mux.HandleFunc("GET /admin/devices", handlers.AdminGetDevices)
 }
