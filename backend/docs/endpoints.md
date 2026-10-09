@@ -120,39 +120,58 @@
 ### `GET /admin/devices`
 * **Response (200 OK):**
   ```json
-  [
-    { "id": 1, "uuid": "123e...", "mac": "00:1B:44:11:3A:B7", "user_id": 15 }
-  ]
+    "devices":[
+      {"uuid": "123e...",
+      "device_name": "Jardim Sul",
+      "user_id": "1"
+      },
+      {"uuid": "456f...",
+      "device_name": "Jardim Leste",
+      "user_id": "2"
+      }
+    ]
   ```
 
-### `POST /admin/devices`
+### `PUT /admin/devices`
 * **Request:**
   ```json
   {
-    "mac": "00:1B:44:11:3A:B7",
-    "pin": "847291"
+    "uuid": "123e4567-e89b-12d3-a456-426614174000",
+    "device_name": "Jardim Varanda",
+    "user_id": "1",
+    "user_email": "email@email.com"
   }
   ```
 * **Response (201 Created):**
   ```json
-  { "uuid": "123e4567-e89b-12d3-a456-426614174000" }
+  { 
+    "uuid": "123e4567-e89b-12d3-a456-426614174000",
+    "device_name": "Jardim Varanda",
+    "user_id": "1",
+    "user_email": "email@email.com"
+  }
   ```
 
 ### `GET /admin/devices/{id}`
 * **Response (200 OK):**
   ```json
   {
-    "id": 1,
-    "mac": "00:1B:44:11:3A:B7",
-    "last_ip": "192.168.1.50",
-    "status": "ativo"
+    "uuid": "123e4567-e89b-12d3-a456-426614174000",
+    "device_name": "Jardim Varanda",
+    "user_id": "1",
+    "user_email": "email@email.com"
   }
   ```
 
 ### `PUT /admin/devices/{id}`
 * **Request:**
   ```json
-  { "status": "suspenso" }
+  { 
+    "status": "suspenso",
+    "device_name": "Jardim Varanda",
+    "user_id": "1",
+    "user_email": "email@email.com"
+  }
   ```
 
 ### `DELETE /admin/devices/{id}`
@@ -162,7 +181,11 @@
 * **Response (200 OK):**
   ```json
   [
-    { "id": 15, "email": "usuario@email.com", "total_devices": 2 }
+    { 
+      "id": 15, 
+      "email": "[EMAIL_ADDRESS]", 
+      "location": "09241-070"
+    }
   ]
   ```
 
